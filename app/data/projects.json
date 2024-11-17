@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Concept",
+    "description": "A moodboard and idea organization app with real-time collaboration and media tagging features.",
+    "technologies": ["React", "Fabric.js", "TypeScript"],
+    "link": "#"
+  },
+  {
+    "name": "DayZero",
+    "description": "A journal app with goal tracking, mood tracking, and streak features for daily productivity.",
+    "technologies": ["React", "Tauri", "SQLite"],
+    "link": "#"
+  }
+]

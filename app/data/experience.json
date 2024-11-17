@@ -1,0 +1,20 @@
+[
+  {
+    "duration": "2024 — PRESENT",
+    "title": "Senior Frontend Engineer · TechCorp",
+    "description": "Build and maintain critical components used across the product. Work closely with cross-functional teams, including developers, designers, and product managers.",
+    "skills": ["React", "TypeScript", "Next.js", "TailwindCSS"]
+  },
+  {
+    "duration": "2021 — 2024",
+    "title": "Frontend Developer · DesignLab",
+    "description": "Led the development of key frontend features, improving user experience and performance. Worked on migrating legacy codebases to modern frameworks.",
+    "skills": ["Vue.js", "JavaScript", "SCSS"]
+  },
+  {
+    "duration": "2020 — 2021",
+    "title": "Frontend Intern · WebWorks",
+    "description": "Assisted in building components for client-facing projects. Gained hands-on experience with modern web development practices.",
+    "skills": ["HTML", "CSS", "JavaScript"]
+  }
+]
