@@ -1,6 +1,11 @@
 import React from 'react';
 
-export default function Role({ duration, title, description, skills }) {
+export default function Role({ duration, title, description, skills }: {
+    duration: string;
+    title: string;
+    description: string;
+    skills: string[];
+}) {
   return (
     <div className="border-l-2 border-cyan-400/20 pl-4 space-y-4">
       <div className="flex items-center gap-2 text-cyan-300">
