@@ -1,0 +1,17 @@
+---
+title: 'How I Built DayZero'
+subtitle: 'Tracking Goals and Mood with a Simple App'
+date: '2024-11-19'
+---
+
+### **How I Built DayZero**
+
+I built **DayZero** because I needed a way to track my goals. For a long time, I struggled to stay consistent with my daily goals and actions. Having a digital space to write down and track these goals felt like it could help keep me more accountable. As I was brainstorming features for the app, I thought it would be interesting to add mood tracking as well. After researching the impact that mood has on productivity and well-being, I realized that combining the two was actually a great idea.
+
+The hardest challenge I faced during development was handling the creation of new goals and tags while entering data into the app. Initially, when creating a new entry, the app would attempt to set a goal ID that wasn’t valid yet, which led to errors. This was a tricky issue to solve because I had to ensure that each goal, tag, and entry was properly linked, even when they were being created dynamically. 
+
+To fix this, I had to make the functions for adding new goals, tags, and entries run at different times based on whether there were any new ones to create. This meant creating a more flexible system where the app could handle the creation of new data without causing conflicts. It wasn’t a perfect solution right away, but with time, I was able to refine the logic and make it more efficient.
+
+For the tech stack, I used the usual tools: **NextJS**, **Tailwind**, **TypeScript**, and **Supabase**. These technologies have worked well for me in the past, and they allowed me to quickly build the app with a clean and responsive interface. DayZero started off as a personal tool, but I hope that others can find it useful too. I'll continue to update it as I identify new features or improvements based on my own needs and user feedback.
+
+---

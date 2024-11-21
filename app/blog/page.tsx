@@ -36,28 +36,24 @@ export default async function Home() {
       {posts.length === 0 ? (
         <p>No blog posts found.</p>
       ) : (
-        <ul className="space-y-4">
-          {posts.map((post) => (
-            // <li key={post.slug}>
-            //   <Link href={`/blog/${post.slug}`} className="text-purple-600 hover:underline font-semibold font-sans">
-            //     {post.title}
-            //   </Link>
-            //   <p className="text-sm text-gray-500">{post.date}</p>
-            // </li>
-            <Link href={`/blog/${post.slug}`} key={post.slug}>
-                <Card className='hover:bg-white/10 bg-black/5 border-black/40 text-black'>
+        <div className="space-y-4">
+          {posts
+          .sort((a, b) => (a.date > b.date ? -1 : 1))
+          .map((post) => (
+            <Link href={`/blog/${post.slug}`} key={post.slug} className='mx-1'>
+                <Card className='hover:bg-white/10'>
                     <CardHeader>
                         <div className='flex justify-between'>
                             <CardTitle className='font-sans tracking-wider'>{post.title}</CardTitle>
                             <CardTitle className="text-sm text-gray-500">{post.date}</CardTitle>
                         </div>
-                        <CardDescription>{post.subtitle}</CardDescription>
+                        <CardDescription className='font-sans'>{post.subtitle}</CardDescription>
                     </CardHeader>
                 </Card>
             </Link>
           
           ))}
-        </ul>
+        </div>
       )}
     </div>
   )

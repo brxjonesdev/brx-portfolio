@@ -33,8 +33,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     })
 
     return (
-      <article className="prose lg:prose-md font-sans text-black">
-        <CardHeader className='p-0 pb-10'>
+      <article className="prose lg:prose-md font-sans w-full text-white  prose-strong:text-fuchsia-600">
+        <CardHeader className=' text-white border rounded-xl p-4'>
     <CardTitle>{frontmatter.title} <span className='text-xs font-sans'>/ {frontmatter.date}</span></CardTitle>
     <CardDescription>{frontmatter.subtitle}</CardDescription>
   </CardHeader>

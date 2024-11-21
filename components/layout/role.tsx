@@ -1,10 +1,11 @@
 import React from 'react';
 
-export default function Role({ duration, title, description, skills }: {
+export default function Role({ duration, title, description, skills, works }: {
     duration: string;
     title: string;
     description: string;
     skills: string[];
+    works: string[];
 }) {
   return (
     <div className="border-l-2 border-cyan-400/20 pl-4 space-y-4">
@@ -22,6 +23,23 @@ export default function Role({ duration, title, description, skills }: {
             {skill}
           </span>
         ))}
+        
+
+      </div>
+      <div>
+        {works && (
+          <div>
+            <p className='pb-2 font-semibold'>Related Projects</p>
+            {works.map((work) => (
+          <span
+            key={work}
+            className="px-3 py-1 bg-cyan-900 text-cyan-300 text-sm rounded"
+          >
+            {work}
+          </span>
+        ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -12,12 +12,6 @@
     "link": "https://beatmap-brxjonesdev.netlify.app/"
   },
   {
-    "name": "Muse.Club",
-    "description": "A platform for discovering and sharing meaningful music, connecting users through the universal language of music.",
-    "technologies": ["React", "Next.js", "TailwindCSS"],
-    "link": "https://example.com/museclub"
-  },
-  {
     "name": "Gordy's Bar & Grill",
     "description": "A website for a local restaurant, featuring a menu, contact information, and a gallery of the restaurant.",
     "technologies": ["Node.js", "Express"],

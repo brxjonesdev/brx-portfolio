@@ -12,6 +12,7 @@ export default function Experience() {
           title={role.title}
           description={role.description}
           skills={role.skills}
+          works={role.notable_works || []}
         />
       ))}
     </section>

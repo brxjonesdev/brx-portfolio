@@ -16,6 +16,7 @@
     "duration": "2019 — 2020",
     "title": "Web Developer · Chesapeake & Palmetto",
     "description": "Built websites for local businesses, focusing on tailored web solutions and modern design practices.",
-    "skills": ["HTML", "CSS", "JavaScript"]
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "notable_works": ["Gordy's Bar & Grill"]
   }
 ]
