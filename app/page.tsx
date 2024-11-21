@@ -50,7 +50,7 @@ export default function Component() {
             <p>
               I'm currently working on a new project called <span className='font-bold'>Loop</span>, a collaborative way to plan and organize events.
             </p>
-            <Link href="/projects/loop" className='underline text-cyan-400 font-semibold underline-offset-2'>
+            <Link href="https://github.com/brxjonesdev/loop" className='underline text-cyan-400 font-semibold underline-offset-2'>
             See more about Loop
             </Link>
           </div>
