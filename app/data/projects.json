@@ -1,14 +1,27 @@
 [
   {
-    "name": "Concept",
-    "description": "A moodboard and idea organization app with real-time collaboration and media tagging features.",
-    "technologies": ["React", "Fabric.js", "TypeScript"],
-    "link": "#"
-  },
-  {
     "name": "DayZero",
     "description": "A journal app with goal tracking, mood tracking, and streak features for daily productivity.",
     "technologies": ["React", "Tauri", "SQLite"],
-    "link": "#"
+    "link": "https://example.com/dayzero"
+  },
+  {
+    "name": "Beatmap",
+    "description": "A web app that visualizes connections between songs, artists, producers, and writers, helping users explore the music creation network.",
+    "technologies": ["React", "React Flow", "TypeScript"],
+    "link": "https://beatmap-brxjonesdev.netlify.app/"
+  },
+  {
+    "name": "Muse.Club",
+    "description": "A platform for discovering and sharing meaningful music, connecting users through the universal language of music.",
+    "technologies": ["React", "Next.js", "TailwindCSS"],
+    "link": "https://example.com/museclub"
+  },
+  {
+    "name": "Gordy's Bar & Grill",
+    "description": "A website for a local restaurant, featuring a menu, contact information, and a gallery of the restaurant.",
+    "technologies": ["Node.js", "Express"],
+    "link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.gordysplace.com/&ved=2ahUKEwiqhLf49uWJAxVWEVkFHUYpKlAQFnoECBkQAQ&usg=AOvVaw3GKQ6O5_ngoT7DYXyxqt67"
   }
+  
 ]

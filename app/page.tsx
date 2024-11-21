@@ -6,6 +6,7 @@ import Backstory from '@/components/layout/backstory';
 import Experience from '@/components/layout/experience';
 import Projects from '@/components/layout/projects';
 import { Button } from '@/components/shadcn/button';
+import Link from 'next/link';
 
 export default function Component() {
   const scrollToSection = (sectionId: string, offset: number = 50) => {
@@ -45,6 +46,14 @@ export default function Component() {
                   PROJECTS
                 </Button>
           </nav>
+          <div className='text-right text-sm w-fit  pt-4'>
+            <p>
+              I'm currently working on a new project called <span className='font-bold'>Loop</span>, a collaborative way to plan and organize events.
+            </p>
+            <Link href="/projects/loop" className='underline text-cyan-400 font-semibold underline-offset-2'>
+            See more about Loop
+            </Link>
+          </div>
         </div>
         <div className="pb-6 pt-16 lg:space-y-36 space-y-12">
           <Backstory />

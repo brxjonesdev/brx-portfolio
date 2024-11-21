@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Space_Grotesk, Space_Mono } from 'next/font/google';
+import { ThemeProvider } from '@/components/themes/theme-provider';
 
 const spaceGrotesk = Space_Grotesk({
   variable: '--space-grotesk',
@@ -16,7 +17,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: 'Braxton Jones',
   description: `
-  I am a software engineer with a passion for building products that make a difference. I have experience working with a variety of technologies and am always looking to learn more. I am currently working at a startup called Vercel, where I am helping to build the future of the web.`,
+  I am a software engineer with a passion for building products that make a difference. `,
 };
 
 export default function RootLayout({
@@ -25,11 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${spaceGrotesk.variable} ${spaceMono.variable} antialiased`}
+        
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );

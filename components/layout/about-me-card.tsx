@@ -22,7 +22,9 @@ export default function AboutMe() {
       <CardHeader className="flex flex-row items-center gap-4">
         <div>
           <Avatar className="w-12 h-12">
-            <AvatarImage src={profileImage.src} />
+            <Link href="/blog">
+            <AvatarImage src={profileImage.src} className='hover:animate-spin cursor-pointer' />
+            </Link>
             <AvatarFallback>B</AvatarFallback>
           </Avatar>
         </div>
@@ -50,13 +52,14 @@ export default function AboutMe() {
         </div>
       </CardHeader>
       <CardContent className=" flex justify-between items-center">
+        <p className='text-sm text-muted-foreground'>↑ Blog</p>
         <h2 className='text-sm text-muted-foreground'>All my Links {'->'}</h2>
         <div className="flex gap-4 text-gray-400">
-          <Link href="#" className="hover:text-cyan-400 transition-colors">
+          <Link href="https://github.com/brxjonesdev" className="hover:text-cyan-400 transition-colors">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="#" className="hover:text-cyan-400 transition-colors">
+          <Link href="https://www.linkedin.com/in/braxton-jones-a4947b326/" className="hover:text-cyan-400 transition-colors">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
