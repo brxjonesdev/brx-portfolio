@@ -59,7 +59,7 @@ export default function AboutMe() {
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://www.linkedin.com/in/braxton-jones-a4947b326/" className="hover:text-cyan-400 transition-colors">
+          <Link href="https://www.linkedin.com/in/brxjonesdev/" className="hover:text-cyan-400 transition-colors">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>

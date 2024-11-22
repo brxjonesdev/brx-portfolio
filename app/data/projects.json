@@ -3,7 +3,7 @@
     "name": "DayZero",
     "description": "A journal app with goal tracking, mood tracking, and streak features for daily productivity.",
     "technologies": ["React", "Tauri", "SQLite"],
-    "link": "https://example.com/dayzero"
+    "link": "https://dayzero-ttsl.netlify.app/"
   },
   {
     "name": "Beatmap",
