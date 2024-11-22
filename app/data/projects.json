@@ -2,13 +2,13 @@
   {
     "name": "DayZero",
     "description": "A journal app with goal tracking, mood tracking, and streak features for daily productivity.",
-    "technologies": ["React", "Tauri", "SQLite"],
+    "technologies": ["NextJS", "TypeScript", "TailwindCSS", "Supabase"],
     "link": "https://dayzero-ttsl.netlify.app/"
   },
   {
     "name": "Beatmap",
     "description": "A web app that visualizes connections between songs, artists, producers, and writers, helping users explore the music creation network.",
-    "technologies": ["React", "React Flow", "TypeScript"],
+    "technologies": ["React", "React Flow", "TypeScript", "TailwindCSS"],
     "link": "https://beatmap-brxjonesdev.netlify.app/"
   },
   {
