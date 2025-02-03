@@ -1,5 +1,11 @@
 [
   {
+    "name": "Hues",
+    "description": "A color palette generator that allows users to create, save, and share color palettes.",
+    "technologies": ["NextJS", "TypeScript", "TailwindCSS"],
+    "link": "https://pickrypt.netlify.app/"
+  },
+  {
     "name": "DayZero",
     "description": "A journal app with goal tracking, mood tracking, and streak features for daily productivity.",
     "technologies": ["NextJS", "TypeScript", "TailwindCSS", "Supabase"],

@@ -1,0 +1,42 @@
+[
+  {
+    "duration": "2020 — 2022",
+    "title": "Web Developer · Workable Web Solutions",
+    "description": {
+      "overview": "Designed and developed dynamic websites tailored for small businesses, blending modern design practices with seamless functionality. Leveraged PHP to implement custom back-end features, ensuring robust and scalable solutions. Collaborated closely with clients to create user-friendly interfaces and optimize web performance.",
+      "action_verbs": [
+        "Led development of multiple websites from concept to deployment, utilizing a wide range of technologies.",
+        "Enhanced site functionality by integrating third-party services and APIs.",
+        "Coordinated with design teams to deliver visually appealing and highly functional web experiences."
+      ]
+    },
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "PHP"
+    ],
+    "notable_works": null
+  },
+  {
+    "duration": "2019 — 2020",
+    "title": "Junior Web Developer · Chesapeake & Palmetto",
+    "description": {
+      "overview": "Crafted engaging websites for local businesses, delivering customized solutions that balanced aesthetic appeal and technical excellence. Focused on delivering modern, responsive designs tailored to client needs.",
+      "action_verbs": [
+        "Assisted senior developers in building and optimizing web pages, improving load times and user experience.",
+        "Collaborated with clients to gather requirements and transform ideas into functional websites.",
+        "Provided ongoing website maintenance and troubleshooting to ensure smooth operation."
+      ]
+    },
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "notable_works": [
+      "Gordy's Bar & Grill"
+    ]
+  }
+]

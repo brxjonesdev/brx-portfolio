@@ -3,17 +3,23 @@ import React from 'react';
 export default function Role({ duration, title, description, skills, works }: {
     duration: string;
     title: string;
-    description: string;
+    description: {
+      "overview": string;
+      "action_verbs": string[];
+    };
     skills: string[];
     works: string[];
 }) {
   return (
-    <div className="border-l-2 border-cyan-400/20 pl-4 space-y-4">
-      <div className="flex items-center gap-2 text-cyan-300">
-        <span className="text-sm">{duration}</span>
-      </div>
+    <div className="border-l-2 border-cyan-400/20 pl-4 space-y-2">
+    
       <h3 className="text-xl font-semibold text-gray-100">{title}</h3>
-      <p className="text-gray-400">{description}</p>
+      {description.action_verbs.map((verb) => {
+        return (
+          <p key={verb} className="text-gray-300 text-sm leading-relaxed">
+            {verb}
+          </p>)})}
+      
       <div className="flex gap-2 flex-wrap">
         {skills.map((skill) => (
           <span
@@ -27,17 +33,17 @@ export default function Role({ duration, title, description, skills, works }: {
 
       </div>
       <div>
-        {works && (
+        {works && works.length > 0 && (
           <div>
             <p className='pb-2 font-semibold'>Related Projects</p>
             {works.map((work) => (
-          <span
-            key={work}
-            className="px-3 py-1 bg-cyan-900 text-cyan-300 text-sm rounded"
-          >
-            {work}
-          </span>
-        ))}
+              <span
+          key={work}
+          className="px-3 py-1 bg-cyan-900 text-cyan-300 text-sm rounded"
+              >
+          {work}
+              </span>
+            ))}
           </div>
         )}
       </div>

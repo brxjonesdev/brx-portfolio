@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './project'; // Import the Project component
-import projectsData from '@/app/data/projects.json'; // Import the JSON file
+import projectsData from '@/app/content/projects.json'; // Import the JSON file
 
 export default function Projects() {
   return (
