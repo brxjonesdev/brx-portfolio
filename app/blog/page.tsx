@@ -1,60 +1,26 @@
-import Link from 'next/link'
-import { promises as fs } from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import {
-    Card,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-  } from "@/components/shadcn/card"
-  
+import BlogPosts from "@/components/blog/blog";
+import { Button } from "@/components/shadcn/button";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+
 
 export default async function Home() {
-  const blogDir = path.join(process.cwd(), 'app/blog')
-  const files = await fs.readdir(blogDir)
-  
-  const posts = await Promise.all(
-    files
-      .filter((file) => path.extname(file) === '.mdx')
-      .map(async (file) => {
-        const filePath = path.join(blogDir, file)
-        const fileContent = await fs.readFile(filePath, 'utf8')
-        const { data } = matter(fileContent)
-        return {
-          slug: file.replace('.mdx', ''),
-          title: data.title || 'Untitled',
-          subtitle: data.subtitle || 'No subtitle',
-          date: data.date || 'No date',
-        }
-      })
-  )
+
 
   return (
-    <div className="max-w-5xl mx-auto py-2">
-      <h1 className="text-3xl font-bold mb-6 font-sans">My Current Ramblings...</h1>
-      {posts.length === 0 ? (
-        <p>No blog posts found.</p>
-      ) : (
-        <div className="space-y-4">
-          {posts
-          .sort((a, b) => (a.date > b.date ? -1 : 1))
-          .map((post) => (
-            <Link href={`/blog/${post.slug}`} key={post.slug} className='mx-1'>
-                <Card className='hover:bg-white/10'>
-                    <CardHeader>
-                        <div className='flex justify-between'>
-                            <CardTitle className='font-sans tracking-wider'>{post.title}</CardTitle>
-                            <CardTitle className="text-sm text-gray-500">{post.date}</CardTitle>
-                        </div>
-                        <CardDescription className='font-sans'>{post.subtitle}</CardDescription>
-                    </CardHeader>
-                </Card>
-            </Link>
-          
-          ))}
+    <div className="min-h-screen bg-background font-mono px-6 ">
+      <section className="max-w-4xl mx-auto py-12 space-y-4">
+        <div className="flex gap-2 items-center">
+          <Link href="/">
+          <Button size="icon" variant="ghost" className="text-white">
+            <ArrowLeft/>
+          </Button>
+          </Link>
+        <h3 className="text-xl font-bold text-white">All of my Posts.</h3>
         </div>
-      )}
-    </div>
+      <BlogPosts variant='all'/>
+      </section>
+    </div> 
+   
   )
 }

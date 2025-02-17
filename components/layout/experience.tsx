@@ -1,6 +1,6 @@
 import React from 'react';
 import Role from './role'; // Import the Role component
-import experienceData from '@/app/data/experience.json'; // Import the JSON file
+import experienceData from '@/app/content/experience.json'; // Import the JSON file
 
 export default function Experience() {
   return (

@@ -12,9 +12,9 @@ import {
   AvatarImage,
 } from '@/components/shadcn/avatar';
 import profileImage from '@/public/blusuede.png';
-import Typewriter from 'typewriter-effect';
 import Link from 'next/link';
 import { Github, Linkedin, FileUser } from 'lucide-react';
+import { Separator } from '../shadcn/separator';
 
 export default function AboutMe() {
   return (
@@ -22,9 +22,7 @@ export default function AboutMe() {
       <CardHeader className="flex flex-row items-center gap-4">
         <div>
           <Avatar className="w-12 h-12">
-            <Link href="/blog">
-            <AvatarImage src={profileImage.src} className='hover:animate-spin cursor-pointer' />
-            </Link>
+          <AvatarImage src={profileImage.src} className='hover:animate-spin' />
             <AvatarFallback>B</AvatarFallback>
           </Avatar>
         </div>
@@ -33,26 +31,13 @@ export default function AboutMe() {
             Braxton Jones
           </CardTitle>
           <CardDescription className="text-xs md:text-sm lg:text-md">
-          <Typewriter
-  options={{
-    strings: [
-      'Web Developer', 
-      'Creative Thinker', 
-      'Problem Solver', 
-      'Tech Enthusiast', 
-      'Software Developer'
-    ],
-    autoStart: true,
-    loop: true,
-
-  }}
-/>
+          Software Developer
 
           </CardDescription>
         </div>
       </CardHeader>
-      <CardContent className=" flex justify-between items-center">
-        <p className='text-sm text-muted-foreground'>↑ Blog</p>
+      <CardContent className='space-y-4' >
+      <div className='flex gap-6 ml-auto w-full justify-end'>
         <h2 className='text-sm text-muted-foreground'>All my Links {'->'}</h2>
         <div className="flex gap-4 text-gray-400">
           <Link href="https://github.com/brxjonesdev" className="hover:text-cyan-400 transition-colors">
@@ -69,6 +54,13 @@ export default function AboutMe() {
   <span className="sr-only">Download Resume</span>
 </a>
 
+        </div>
+        </div>
+        <Separator/>
+        <div className='text-right'>
+          <p className='text-sm'>
+            Currently building <Link href="https://github.com/brxjonesdev/narratica" className='text-cyan-400 font-semibold hover:text-cyan-200'>Narratica</Link>.
+          </p>
         </div>
       </CardContent>
     </Card>
