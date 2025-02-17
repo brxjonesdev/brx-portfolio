@@ -3,7 +3,7 @@
     "name": "Hues",
     "description": "A color palette generator that allows users to create, save, and share color palettes.",
     "technologies": ["NextJS", "TypeScript", "TailwindCSS"],
-    "link": "https://pickrypt.netlify.app/"
+    "link": "https://brxjonesdev-hues.netlify.app/"
   },
   {
     "name": "DayZero",

@@ -3,7 +3,7 @@ import path from 'path'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import { CardHeader, CardTitle, CardDescription } from '@/components/shadcn/card'
 import Test from '@/components/blog/embeds/test'
-import { ArrowLeft, CalendarIcon, ClockIcon } from 'lucide-react'
+import { CalendarIcon, ClockIcon } from 'lucide-react'
 import { Button } from '@/components/shadcn/button'
 import Link from 'next/link'
 
@@ -64,7 +64,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
       </div>
       <div className='h-1 w-full bg-fuchsia-600 my-4'></div>
-      <div className="prose lg:prose-lg prose-invert max-w-none">
+      <div className="prose lg:prose-md prose-invert max-w-none">
         {content}
       </div>
     </article>

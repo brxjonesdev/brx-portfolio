@@ -20,6 +20,9 @@ export default function Component() {
         <div className="lg:h-screen lg:sticky lg:top-0 pb-6 pt-12 flex flex-col space-y-6 ">
           <AboutMe />
           <Separator/>
+          <h2 className='text-lg font-semibold'>
+            Blog Posts
+          </h2>
           <BlogPosts variant='showcase'/>
        <div className='w-full flex justify-end'>
               <Link href='/blog' className=''>
