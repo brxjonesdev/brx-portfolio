@@ -9,6 +9,7 @@ import {
 } from '@/components/shadcn/card';
 import { usePathname } from 'next/navigation'
 
+
 import profileImage from '@/public/blusuede.png';
 
 import Link from 'next/link';

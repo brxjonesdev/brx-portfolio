@@ -15,6 +15,7 @@ import profileImage from '@/public/blusuede.png';
 import Link from 'next/link';
 import { Github, Linkedin, FileUser } from 'lucide-react';
 import { Separator } from '../shadcn/separator';
+import { Typewriter } from './typewriter';
 
 export default function AboutMe() {
   return (
@@ -31,7 +32,7 @@ export default function AboutMe() {
             Braxton Jones
           </CardTitle>
           <CardDescription className="text-xs md:text-sm lg:text-md">
-          Software Developer
+          <Typewriter />
 
           </CardDescription>
         </div>
