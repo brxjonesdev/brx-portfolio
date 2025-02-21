@@ -50,8 +50,8 @@ export default function AboutMe() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           
-          <a href={`/resume.pdf`} download className="hover:text-cyan-400 transition-colors">
-  <FileUser className="h-5 w-5" />
+            <a href={`/resume.pdf`} download="braxton-jones-developer-resume.pdf" className="hover:text-cyan-400 transition-colors">
+        <FileUser className="h-5 w-5" />
   <span className="sr-only">Download Resume</span>
 </a>
 
