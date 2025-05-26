@@ -36,7 +36,7 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
       )
       console.log(posts)
   return (
-   <section className='flex flex-col space-y-4 overflow-y-scroll'>
+   <section className='flex flex-col space-y-4 overflow-y-scroll '>
     {posts
     .filter((post) => variant === 'showcase' ? post.isShowcase : true)
     .map((post, index) => {
@@ -44,8 +44,8 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
             <Link href={`/blog/${post.slug}`} key={post.slug} className=''>
             <Card key={index} className='hover:bg-white/10'>
             <CardHeader>
-              <CardTitle>{post.title}</CardTitle>
-              <CardDescription>{post.subtitle}</CardDescription>
+              <CardTitle className='text-sm'>{post.title}</CardTitle>
+              <CardDescription className='text-xs'>{post.subtitle}</CardDescription>
             </CardHeader>
           </Card>
             </Link>

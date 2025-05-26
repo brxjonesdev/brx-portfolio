@@ -4,7 +4,6 @@
 import BlogPosts from '@/components/blog/blog';
 import AboutMe from '@/components/layout/about-me-card';
 import Backstory from '@/components/layout/backstory';
-import Experience from '@/components/layout/experience';
 import Projects from '@/components/layout/projects';
 import { Button } from '@/components/shadcn/button';
 import { Separator } from '@/components/shadcn/separator';
@@ -30,9 +29,8 @@ export default function Component() {
               </Link>
         </div>
         </div>
-        <div className="pb-6 lg:pt-16 lg:space-y-24 space-y-12">
+        <div className="pb-6 lg:pt-16 space-y-8">
           <Backstory />
-          <Experience />
           <Projects />
         </div>
       </div>

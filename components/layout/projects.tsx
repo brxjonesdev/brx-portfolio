@@ -1,22 +1,14 @@
 import React from 'react';
-import Project from './project'; // Import the Project component
-import projectsData from '@/app/content/projects.json'; // Import the JSON file
+import { ProjectsExpand } from '../shadcn/expandable-card';
+import { projectsData } from '@/lib/projects';
 
 export default function Projects() {
   return (
     <section id="projects" className="space-y-4">
-      <h2 className="text-2xl font-semibold text-gray-100 font-sans">
-        Projects
+      <h2 className="text-lg font-semibold text-gray-100 font-sans">
+        Featured Work.
       </h2>
-      {projectsData.map((project, index) => (
-        <Project
-          key={index}
-          name={project.name}
-          description={project.description}
-          technologies={project.technologies}
-          link={project.link}
-        />
-      ))}
+      <ProjectsExpand projects={projectsData} />
     </section>
   );
 }
