@@ -77,7 +77,7 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
       <motion.div
         layoutId={`card-${active.title}-${id}`}
         ref={ref}
-        className="w-full max-w-[400px] h-[625px] overflow-y-scroll md:h-auto md:max-h-[90%] flex flex-col bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-xl"
+        className="w-full max-w-[400px]  overflow-y-scroll md:h-auto max-h-[90%] flex flex-col bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-xl"
       >
         <motion.div layoutId={`image-${active.title}-${id}`}>
   <div className="w-[600px] h-32 overflow-hidden border-none rounded bg-cyan-400">
@@ -164,7 +164,7 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
           <img
             src={card.src || "/placeholder.svg"}
             alt={card.title}
-            className="object-cover object-center bg-white/10 rounded-lg h-[100px] max-w-[5rem]"
+            className="object-cover object-center bg-white/10 rounded-lg h-[100px] max-w-[5rem] hidden lg:block"
           />
               </motion.div>
               <div className="space-y-2">
