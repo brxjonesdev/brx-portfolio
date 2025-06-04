@@ -1,13 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-
-
-import BlogPosts from '@/components/blog/blog';
 import AboutMe from '@/components/layout/about-me-card';
 import Backstory from '@/components/layout/backstory';
 import Projects from '@/components/layout/projects';
-import { Button } from '@/components/shadcn/button';
 import { Separator } from '@/components/shadcn/separator';
-import Link from 'next/link';
 
 export default function Component() {
 
