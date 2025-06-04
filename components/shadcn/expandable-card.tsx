@@ -12,7 +12,6 @@ export type Project = {
   description: string;
   ctaLink: string;
   codeLink?: string;
-  content: string;
 };
 
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
@@ -81,14 +80,11 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
         className="w-full max-w-[400px] h-[625px] overflow-y-scroll md:h-auto md:max-h-[90%] flex flex-col bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-xl"
       >
         <motion.div layoutId={`image-${active.title}-${id}`}>
-          <img
-            width={500}
-            height={300}
-            src={active.src || "/placeholder.svg"}
-            alt={active.title}
-            className="w-full h-64 object-cover object-center"
-          />
-        </motion.div>
+  <div className="w-[600px] h-32 overflow-hidden border-none rounded bg-cyan-400">
+ 
+</div>
+</motion.div>
+
 
         <div className="p-6 flex flex-col gap-4">
           <div>
@@ -106,19 +102,7 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
             </motion.p>
           </div>
 
-          <motion.div
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="text-neutral-700 dark:text-neutral-300 text-sm space-y-4 overflow-auto max-h-[200px] md:max-h-[300px] pr-2"
-          >
-            {active.content && (
-              <p className="text-sm italic text-neutral-600 dark:text-neutral-400 font-sans">{active.content}</p>
-            )}
-
       
-          </motion.div>
 
           <div className="flex gap-3 mt-2">
             {active.ctaLink && (
@@ -176,15 +160,13 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
             className=" p-3 hover:rounded-xl hover:cursor-pointer hover:bg-cyan-400/30 max-w-[600px] border-l rounded-none "
           >
             <div className="flex gap-4 flex-col md:flex-row ">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
+              <motion.div layoutId={`image-${card.title}-${id}`} className="flex-1">
           <img
-            width={500}
-            height={300}
             src={card.src || "/placeholder.svg"}
             alt={card.title}
-            className="w-48 h-full object-cover object-center bg-white/10 rounded-lg"
+            className="object-cover object-center bg-white/10 rounded-lg h-[100px] max-w-[5rem]"
           />
-        </motion.div>
+              </motion.div>
               <div className="space-y-2">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}

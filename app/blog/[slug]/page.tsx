@@ -36,19 +36,19 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     })
 
     return (
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen bg-black text-white text-sm font-sans">
         <article className="max-w-3xl mx-auto px-6 py-12">
           {/* Back to posts link */}
-          <Link href="/blog" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-8">
+          <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-8">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all posts
+            Home
           </Link>
 
           {/* Header section */}
           <header className="mb-12 font-sans">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">{frontmatter.title}</h1>
-            <p className="text-lg text-gray-300 leading-relaxed mb-6">{frontmatter.subtitle}</p>
-            <div className="flex items-center space-x-6 text-gray-400 text-sm">
+            <h1 className="text-xl md:text-4xl font-bold mb-6 leading-tight">{frontmatter.title}</h1>
+            <p className="text-md text-gray-300 leading-relaxed mb-6">{frontmatter.subtitle}</p>
+            <div className="flex items-center space-x-6 text-gray-400 text-xs">
               <div className="flex items-center">
                 <CalendarIcon className="w-4 h-4 mr-2" />
                 <span>{frontmatter.date}</span>
@@ -61,7 +61,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           </header>
 
           {/* Content */}
-          <div className="prose prose-md prose-invert max-w-none font-sans">{content}</div>
+          <div className="prose prose-xs prose-invert max-w-none font-sans">{content}</div>
         </article>
       </div>
     )
