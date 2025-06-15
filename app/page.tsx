@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import BlogPosts from '@/components/blog/blog';
 import AboutMe from '@/components/layout/about-me-card';
 import Backstory from '@/components/layout/backstory';
 import Projects from '@/components/layout/projects';
@@ -14,10 +15,10 @@ export default function Component() {
         <div className="lg:h-screen lg:sticky lg:top-0 pb-6 pt-12 flex flex-col space-y-6 ">
           <AboutMe />
           <Separator/>
-          {/* <h2 className='text-lg font-semibold'>
+          <h2 className='text-lg font-semibold'>
             Blog Posts
           </h2>
-          <BlogPosts variant='showcase'/> */}
+          <BlogPosts variant='showcase'/>
        {/* <div className='w-full flex justify-end'>
               <Link href='/blog' className=''>
               <Button variant='secondary' className=''>View All Posts</Button>

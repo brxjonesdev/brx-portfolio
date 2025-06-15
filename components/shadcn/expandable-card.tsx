@@ -80,9 +80,11 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
         className="w-full max-w-[400px]  overflow-y-scroll md:h-auto max-h-[90%] flex flex-col bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-xl"
       >
         <motion.div layoutId={`image-${active.title}-${id}`}>
-  <div className="w-[600px] h-32 overflow-hidden border-none rounded bg-cyan-400">
- 
-</div>
+  <img
+            src={active.src || "/placeholder.svg"}
+            alt={active.title}
+            className="object-cover object-center bg-white/10 rounded-lg h-[200px] w-full hidden lg:block"
+          />
 </motion.div>
 
 
@@ -164,7 +166,7 @@ export function ProjectsExpand({projects}: {projects: Project[]}) {
           <img
             src={card.src || "/placeholder.svg"}
             alt={card.title}
-            className="object-cover object-center bg-white/10 rounded-lg h-[100px] max-w-[5rem] hidden lg:block"
+            className="object-cover object-center bg-white/10 rounded-lg h-[80px] min-w-[10rem] hidden lg:block"
           />
               </motion.div>
               <div className="space-y-2">

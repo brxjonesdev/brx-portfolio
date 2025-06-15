@@ -28,10 +28,20 @@ const narratica: Project = {
   codeLink: "https://github.com/brxjonesdev/narratica",
 };
 
+const tempo: Project = {
+  title: "Tempo",
+  description: "A timeboxing app that helps you focus on your tasks by breaking them down into manageable intervals.",
+  src: "Tempo.png",
+  ctaLink: "https://tempobrx.netlify.app/",
+  codeLink: "https://github.com/brxjonesdev/tempo"
+}
+
 
 
 export const projectsData: Project[] = [
+
   narratica,
+  tempo,
   beatmap,
   hues,
 ];

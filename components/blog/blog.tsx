@@ -42,7 +42,7 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
     .map((post, index) => {
         return (
             <Link href={`/blog/${post.slug}`} key={post.slug} className=''>
-            <Card key={index} className='hover:bg-white/10 m-0 p-0'>
+            <Card key={index} className='hover:bg-white/10 m-0 p-2'>
             <CardHeader className='p-3'>
               <CardTitle className='text-sm'>{post.title}</CardTitle>
               <CardDescription className='text-xs'>{post.subtitle}</CardDescription>

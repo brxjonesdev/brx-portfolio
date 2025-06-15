@@ -3,9 +3,10 @@ import path from "path"
 import { compileMDX } from "next-mdx-remote/rsc"
 import { CalendarIcon, ClockIcon, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { CodeBlock } from "@/app/content/components/codeblock"
 
 const components = {
-  // Add custom components here
+  CodeBlock,
 }
 
 export async function generateStaticParams() {
