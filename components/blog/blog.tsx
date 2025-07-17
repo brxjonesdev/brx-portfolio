@@ -28,9 +28,10 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
             return {
               slug: file.replace('.mdx', ''),
               title: data.title || 'Untitled',
-              subtitle: data.subtitle || 'No subtitle',
+              subtitle: data.blurb || 'No subtitle',
               date: data.date || 'No date',
-              isShowcase: data.isShowcase || false
+              isShowcase: data.featured || false,
+              readingTime: data.timeToRead || 'Unknown',
             }
           })
       )

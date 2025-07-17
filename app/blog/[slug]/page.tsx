@@ -1,7 +1,7 @@
 import { promises as fs } from "fs"
 import path from "path"
 import { compileMDX } from "next-mdx-remote/rsc"
-import { CalendarIcon, ClockIcon, ArrowLeft } from "lucide-react"
+import { CalendarIcon,  ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { CodeBlock } from "@/app/content/components/codeblock"
 
@@ -52,22 +52,25 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             <div className="flex items-center space-x-6 text-gray-400 text-xs">
               <div className="flex items-center">
                 <CalendarIcon className="w-4 h-4 mr-2" />
-                <span>{frontmatter.date}</span>
+                <span>
+                  {new Date(frontmatter.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                  })}
+                </span>
               </div>
-              <div className="flex items-center">
-                <ClockIcon className="w-4 h-4 mr-2" />
-                <span>{frontmatter.readingTime}</span>
-              </div>
+             
             </div>
           </header>
 
           {/* Content */}
-          <div className="prose prose-xs prose-invert max-w-none font-sans">{content}</div>
+          <div className="prose prose-xs prose-invert max-w-none font-sans leading-7 ">{content}</div>
         </article>
       </div>
     )
   } catch (error) {
-    console.error("Error reading blog post:", error)
+    console.error("Error reading blog post:", error, )
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center font-mono">
         <section>
