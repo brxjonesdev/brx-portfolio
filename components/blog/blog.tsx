@@ -30,16 +30,14 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
               title: data.title || 'Untitled',
               subtitle: data.blurb || 'No subtitle',
               date: data.date || 'No date',
-              isShowcase: data.featured || false,
-              readingTime: data.timeToRead || 'Unknown',
+              show: data.show || false,
             }
           })
       )
-      console.log(posts)
   return (
    <section className='flex flex-col space-y-4 overflow-y-scroll '>
     {posts
-    .filter((post) => variant === 'showcase' ? post.isShowcase : true)
+    .filter((post) => variant === "all" || post.show)
     .map((post, index) => {
         return (
             <Link href={`/blog/${post.slug}`} key={post.slug} className=''>

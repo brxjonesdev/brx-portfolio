@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private Creation vs Public Expression.mdx",
+                "file": "privatecreationvspublicexpression.mdx",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Private Creation vs Public Expression"
+              "title": "privatecreationvspublicexpression"
             }
           }
         ]
@@ -169,11 +169,12 @@
   },
   "active": "91f259bf70c09b97",
   "lastOpenFiles": [
+    "understanding-digital-signals-chapter-one.mdx",
     "template-post.mdx",
-    "wheelhouse-project.mdx",
-    "Private Creation vs Public Expression.mdx",
     "Outline.md",
     "2025-07-01.md",
+    "wheelhouse-project.mdx",
+    "Private Creation vs Public Expression.mdx",
     "start.mdx",
     "Untitled",
     "Welcome.mdx.md"
