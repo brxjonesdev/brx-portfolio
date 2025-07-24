@@ -60,7 +60,7 @@ export default function AboutMe() {
         <Separator/>
         <div className='text-right'>
           <p className='text-sm'>
-            Currently building <Link href="https://github.com/brxjonesdev/wheelhouse" className='text-cyan-400 font-semibold hover:text-cyan-200'>Wheelhouse</Link>.
+            Currently building <Link href="https://github.com/brxjonesdev/soapbox" className='text-cyan-400 font-semibold hover:text-cyan-200'>Soapbox</Link> & learning audio development on <Link href="https://www.ableton.com/en/" className='text-cyan-400 font-semibold hover:text-cyan-200'>Aerwyrm</Link>.
           </p>
         </div>
       </CardContent>

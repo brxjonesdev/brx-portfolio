@@ -26,6 +26,7 @@ const narratica: Project = {
   src: "Narratica.png",
   ctaLink: "https://narratica.braxtonjones.dev/",
   codeLink: "https://github.com/brxjonesdev/narratica",
+  hiatus: true
 };
 
 const tempo: Project = {
