@@ -1,3 +1,7 @@
+
+
+  'use server';
+
 import React from 'react'
 import path from 'path'
 import matter from 'gray-matter'
@@ -10,15 +14,21 @@ import {
   } from "@/components/shadcn/card"
 import Link from 'next/link'
 
-  
+type Post = {
+  slug: string
+  title: string
+  subtitle: string
+  date: string
+  show: boolean
+  project?: string
+  order?: number
+}
 
-  
-
-export default async function BlogPosts({variant}: {variant : "showcase" | "all"}) {
+export default async function BlogPosts() {
      const blogDir = path.join(process.cwd(), 'app/content/posts')
       const files = await fs.readdir(blogDir)
       
-      const posts = await Promise.all(
+      const posts: Post[] = await Promise.all(
         files
           .filter((file) => path.extname(file) === '.mdx')
           .map(async (file) => {
@@ -34,10 +44,12 @@ export default async function BlogPosts({variant}: {variant : "showcase" | "all"
             }
           })
       )
+
+      
   return (
    <section className='flex flex-col space-y-4 overflow-y-scroll '>
     {posts
-    .filter((post) => variant === "all" || post.show)
+    .filter((post) =>  post.show)
     .map((post, index) => {
         return (
             <Link href={`/blog/${post.slug}`} key={post.slug} className=''>

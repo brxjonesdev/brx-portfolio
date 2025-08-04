@@ -158,27 +158,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "edit-mdx:New .mdx file": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "edit-mdx:New .mdx file": false
     }
   },
   "active": "91f259bf70c09b97",
   "lastOpenFiles": [
-    "understanding-digital-signals-chapter-one.mdx",
+    "template 1.mdx",
     "privatecreationvspublicexpression.mdx",
     "template.mdx",
+    "understanding-digital-signals-chapter-one.mdx",
+    "images",
     "template-post.mdx",
     "Outline.md",
     "2025-07-01.md",
     "wheelhouse-project.mdx",
     "Private Creation vs Public Expression.mdx",
     "start.mdx",
-    "Untitled",
     "Welcome.mdx.md"
   ]
 }

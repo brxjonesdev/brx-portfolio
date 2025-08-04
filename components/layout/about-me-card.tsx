@@ -58,10 +58,16 @@ export default function AboutMe() {
         </div>
         </div>
         <Separator/>
-        <div className='text-right'>
-          <p className='text-sm'>
-            Currently building <Link href="https://github.com/brxjonesdev/soapbox" className='text-cyan-400 font-semibold hover:text-cyan-200'>Soapbox</Link> & learning audio development on <Link href="https://www.ableton.com/en/" className='text-cyan-400 font-semibold hover:text-cyan-200'>Aerwyrm</Link>.
-          </p>
+        <div className='text-right text-sm flex flex-col gap-1'>
+          <h4 className=' '>
+            I&apos;m working on...
+          </h4>
+          <div className='space-y-1'>
+            <p>
+              <Link href="https://github.com/brxjonesdev/aerwyrm" className='text-cyan-400 font-semibold hover:text-cyan-200'>Aerwyrm</Link>
+            </p>
+     
+          </div>
         </div>
       </CardContent>
     </Card>
