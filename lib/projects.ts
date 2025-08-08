@@ -37,10 +37,19 @@ const tempo: Project = {
   codeLink: "https://github.com/brxjonesdev/tempo"
 }
 
+export const aerwyrm: Project = {
+  title: "Aerwyrm",
+  description: "An interactive learning experience that teaches you the art and science of sound synthesis through hands-on exploration.",
+  src: "Aerwyrm.png",
+  ctaLink: "https://aerwyrm.braxtonjones.dev/",
+  codeLink: "https://github.com/brxjonesdev/aerwyrm",
+  inProgress: true
+};
+
 
 
 export const projectsData: Project[] = [
-
+  aerwyrm,
   narratica,
   tempo,
   beatmap,

@@ -11,9 +11,11 @@ export type Project = {
   ctaLink: string
   codeLink?: string
   hiatus?: boolean
+  inProgress?: boolean
 }
 
 import { useOutsideClick } from "@/app/hooks/use-outside-click"
+import { Badge } from "./badge"
 
 export function ProjectsExpand({ projects }: { projects: Project[] }) {
   const [active, setActive] = useState<(typeof projects)[number] | boolean | null>(null)
@@ -146,6 +148,7 @@ export function ProjectsExpand({ projects }: { projects: Project[] }) {
                 />
               </motion.div>
               <div className="space-y-2">
+                {card.inProgress && <Badge>In Progress</Badge>}
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
                   className="font-bold tracking-wider flex items-center gap-2"

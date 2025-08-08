@@ -58,13 +58,16 @@ export default function AboutMe() {
         </div>
         </div>
         <Separator/>
-        <div className='text-right text-sm flex flex-col gap-1'>
+        <div className='text-sm flex flex-col gap-2 '>
           <h4 className=' '>
-            I&apos;m working on...
+            I&apos;m working on some projects...
           </h4>
-          <div className='space-y-1'>
+          <div className='flex items-center gap-2'>
             <p>
-              <Link href="https://github.com/brxjonesdev/aerwyrm" className='text-cyan-400 font-semibold hover:text-cyan-200'>Aerwyrm</Link>
+              <Link href="https://aerwyrm.braxtonjones.dev/" className='text-cyan-400 font-semibold hover:text-cyan-200 inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs  transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2'>Aerwyrm</Link>
+            </p>
+            <p>
+              <Link href="https://github.com/brxjonesdev/europa" className='text-cyan-400 font-semibold hover:text-cyan-200 inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2'>Europa</Link>
             </p>
      
           </div>
