@@ -140,7 +140,8 @@ export function ProjectsExpand({ projects }: { projects: Project[] }) {
             className={`p-3 hover:rounded-xl hover:cursor-pointer max-w-[600px] border-l rounded-none "border-cyan-400 hover:bg-cyan-400/30`}
           >
             <div className="flex gap-4 flex-col md:flex-row ">
-              <motion.div layoutId={`image-${card.title}-${id}`} className="flex-1">
+              <motion.div layoutId={`image-${card.title}-${id}`} className="flex-1 flex flex-col gap-1">
+                {card.inProgress && <Badge className="text-center items-center justify-center">In Progress</Badge>}
                 <img
                   src={card.src || "/placeholder.svg"}
                   alt={card.title}
@@ -148,7 +149,7 @@ export function ProjectsExpand({ projects }: { projects: Project[] }) {
                 />
               </motion.div>
               <div className="space-y-2">
-                {card.inProgress && <Badge>In Progress</Badge>}
+                
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
                   className="font-bold tracking-wider flex items-center gap-2"
