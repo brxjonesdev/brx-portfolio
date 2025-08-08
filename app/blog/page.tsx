@@ -1,4 +1,4 @@
-import BlogPosts from "@/components/blog/blog";
+
 import { Button } from "@/components/shadcn/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -18,7 +18,6 @@ export default async function Home() {
           </Link>
         <h3 className="text-xl font-bold text-white">All of my Posts.</h3>
         </div>
-      <BlogPosts variant='all'/>
       </section>
     </div> 
    
