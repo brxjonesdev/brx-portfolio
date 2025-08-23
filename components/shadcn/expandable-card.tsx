@@ -8,7 +8,7 @@ export type Project = {
   src: string
   title: string
   description: string
-  ctaLink: string
+  ctaLink?: string
   codeLink?: string
   hiatus?: boolean
   inProgress?: boolean
